@@ -6,7 +6,16 @@
 #define ANZ 19	/* # of nonzeros on diagonal and upper triangular part of A */
 #define LNZ 13	/* # of nonzeros below the diagonal of L */
 
-int ldl_ (void)
+int ldl_(
+    int *fn,
+    double *fb,
+    double (*fc)[*fn]
+//    int test[*fn] = {1,2,3,4,5,7}; is wrong !
+    // int (*fc)[*fn] fc为4*fc....???
+//     int *(p1[5]);  //指针数组，可以去掉括号直接写作 int *p1[5];
+// int (*p2)[5];  //二维数组指针，不能去掉括号
+
+)
 {
     /* only the upper triangular part of A is required */
     int    Ap [N+1] = {0, 1, 2, 3, 4,   6, 7,   9,   11,      15,     ANZ},

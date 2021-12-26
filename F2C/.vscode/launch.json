@@ -13,8 +13,16 @@
       "environment": [],
       "program": "/Users/Wacky/Documents/GitHub/FortranMixed/F2C/build/ldl",
       "internalConsoleOptions": "openOnFirstSessionStart",
-      "MIMode": "lldb",
-      "externalConsole": false
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "externalConsole": true,
+      "preLaunchTask": "debug"
     }
   ]
 }

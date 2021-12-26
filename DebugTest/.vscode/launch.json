@@ -6,7 +6,7 @@
     "configurations": [
         
         {
-            "name": "(lldb) 启动",
+            "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/source/debug.out",
@@ -15,7 +15,7 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "lldb",//lldb",
+            "MIMode": "gdb",//lldb",
             "preLaunchTask": "debug",
             "setupCommands": [
             {
